@@ -35,7 +35,7 @@ void loop() {
   int steer= pulseIn(ch1,HIGH,25000);
   int throttle= pulseIn(ch3,HIGH,25000);
 
-  int speed= map(throttle,1000,2000,0,255);
+  int speed= map(throttle,1000,2000,25,255);
   analogWrite(mtr_AB_en,speed);
   analogWrite(mtr_CD_en,speed);
   
